@@ -13,5 +13,5 @@ train_control <- trainControl(method = "cv", number=10)
 
 modelo <- train(predictores, objetivo, method="lm", trControl=train_control)
 
-saveRDS(modelo, file = "/modelo_regresion.rds")
+saveRDS(modelo, file = "modelo_regresion.rds")
 
